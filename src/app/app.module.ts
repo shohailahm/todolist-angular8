@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import {ButtonModule} from 'primeng/button';
 import {InputTextModule} from 'primeng/inputtext';
+import { HttpClientModule } from '@angular/common/http';
+import { MovieComponent } from './movie/movie.component';
 @NgModule({
   declarations: [
     AppComponent,
     TodolistComponent,
+    MovieComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
