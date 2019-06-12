@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="col">
+    <input  type="text" pInputText placeholder="Input Item" [(ngModel)]="itemName"/>
+     <p-button (click)="addItem()" label="Add" styleClass="ui-button-info"></p-button>
+
+  </div>
+  <div class="col color-dark">
+    Items list ({{counter}})
+    <ul *ngFor="let item of items;let i=index;">
+      <li (click)="removeItem(i)">{{item}}</li>
+    </ul>
+  </div>
+</div>
